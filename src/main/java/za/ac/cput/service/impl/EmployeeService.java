@@ -1,6 +1,7 @@
 package za.ac.cput.service.impl;
 
 
+<<<<<<< HEAD
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import za.ac.cput.domain.Employee;
@@ -76,3 +77,12 @@ public class EmployeeService implements IServiceEmployee {
         return this.repositoryEmployee.findByEmail(email);
     }
 }
+=======
+
+
+
+public class EmployeeService
+    {
+
+    }
+>>>>>>> 09ce9bdb39db379dce1f41508ee6f166f8915a62

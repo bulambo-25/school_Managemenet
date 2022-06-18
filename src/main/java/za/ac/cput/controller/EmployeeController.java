@@ -1,5 +1,6 @@
 package za.ac.cput.controller;
 
+<<<<<<< HEAD
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -67,4 +68,7 @@ public class EmployeeController {
 
         return  ResponseEntity.noContent().build();
     }
+=======
+public class EmployeeController {
+>>>>>>> 09ce9bdb39db379dce1f41508ee6f166f8915a62
 }

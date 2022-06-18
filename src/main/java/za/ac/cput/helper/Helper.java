@@ -18,7 +18,11 @@ public class Helper {
 
     public static void checkStringPara(String paraName, String paraValue) {
         if (isEmptyOrNull(paraValue))
+<<<<<<< HEAD
             throw new IllegalArgumentException("Invalid Value for " + paraName);
+=======
+            throw new IllegalArgumentException("Invalid Value for " + paraValue);
+>>>>>>> 09ce9bdb39db379dce1f41508ee6f166f8915a62
 
     }
     public static String IsValidEmail(String str) {
