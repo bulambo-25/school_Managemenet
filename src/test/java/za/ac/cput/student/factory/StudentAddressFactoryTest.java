@@ -1,13 +1,14 @@
 package za.ac.cput.student.factory;
 /*
- * name: Taariq Khan
- * student number: 219231141
- *
- *
- *
- *
+ * Name: Taariq Khan
+ * Student number: 219231141
+ * ADP372S – APPLICATIONS DEVELOPMENT PRACTICE 3
+ * EXAMINER: K NAIDOO
+ * MODERATOR: R BURGER
+ * RELEASE DATE: 09th June 2022
+ * DUE DATE: 18th June 2022
+ * TOTAL MARKS: 100
  * */
-
 import org.junit.jupiter.api.Test;
 import za.ac.cput.domain.Address;
 import za.ac.cput.domain.student.StudentAddress;
