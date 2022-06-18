@@ -10,8 +10,11 @@ package za.ac.cput.domain.student;
  * TOTAL MARKS: 100
  * */
 
+import za.ac.cput.domain.Address;
+
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
+import java.util.Objects;
 
 @Entity
 public class StudentAddress

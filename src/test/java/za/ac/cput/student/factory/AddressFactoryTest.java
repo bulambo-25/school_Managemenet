@@ -17,21 +17,23 @@ import za.ac.cput.factory.student.StudentAddressFactory;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class StudentAddressFactoryTest
+class AddressFactoryTest
 {
     @Test
     public void buildWithSuccess()//test passed with student ID provided
     {
-        Address address = AddressFactory.build("45","Parklands","23","Jordan",1237);
+        //String unitNumber = "45";
+
+        Address address = AddressFactory.build("45","Parklands","45","Jordan",6237);
         StudentAddress studentAddress = StudentAddressFactory.build("1234",address);
         System.out.println(studentAddress);
-        assertNotNull(studentAddress);
+        assertNotNull(address);
     }
     @Test
     public void buildWithFailureError()//no student ID provided error test
     {
         Address address = AddressFactory.build("45","Parklands","23","Jordan",1237);
-        Exception exception = assertThrows(IllegalArgumentException.class,()-> StudentAddressFactory.build("",address));
+        Exception exception = assertThrows(IllegalArgumentException.class,()-> AddressFactory.build("","","","",2343));
 
         String exceptionMessage = exception.getMessage();
         System.out.print(exceptionMessage);
