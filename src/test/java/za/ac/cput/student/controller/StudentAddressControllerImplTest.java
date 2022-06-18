@@ -18,9 +18,7 @@ import org.springframework.boot.web.server.LocalServerPort;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import za.ac.cput.controller.student.StudentAddressControllerImpl;
-import za.ac.cput.domain.Address;
 import za.ac.cput.domain.student.StudentAddress;
-import za.ac.cput.factory.AddressFactory;
 import za.ac.cput.factory.student.StudentAddressFactory;
 
 import java.lang.reflect.Array;

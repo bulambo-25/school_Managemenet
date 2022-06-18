@@ -10,7 +10,6 @@ package za.ac.cput.factory.student;
  * TOTAL MARKS: 100
  * */
 import za.ac.cput.helper.helper;
-import za.ac.cput.domain.Address;
 import za.ac.cput.domain.student.StudentAddress;
 
 public class StudentAddressFactory

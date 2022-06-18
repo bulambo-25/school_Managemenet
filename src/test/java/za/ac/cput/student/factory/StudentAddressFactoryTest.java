@@ -10,9 +10,7 @@ package za.ac.cput.student.factory;
  * TOTAL MARKS: 100
  * */
 import org.junit.jupiter.api.Test;
-import za.ac.cput.domain.Address;
 import za.ac.cput.domain.student.StudentAddress;
-import za.ac.cput.factory.AddressFactory;
 import za.ac.cput.factory.student.StudentAddressFactory;
 
 import static org.junit.jupiter.api.Assertions.*;
