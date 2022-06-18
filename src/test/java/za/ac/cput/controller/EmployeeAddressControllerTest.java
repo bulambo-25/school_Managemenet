@@ -35,9 +35,9 @@ class EmployeeAddressControllerTest {
 
     @BeforeEach
     void setUp() {
-        this.employeeAddress= EmployeeAddressFactory.createEmployeeAddress("213345",
-                "2","23","43","Fame",232,"25",
-                "KZN","+27","South Africa");
+        this.employeeAddress= EmployeeAddressFactory.createEmployeeAddress("002345",
+                "05","15","55","Weenen Road",4444,"243",
+                "L'shi","+243","DRC");
         this.baseURL="http://localhost:"+ this.port+"/school_Management/employeeAddress/";
         a_save();
     }

@@ -15,17 +15,17 @@ class EmployeeAddressFactoryTest {
     @Test
     void buildWithSuccess(){
 
-        EmployeeAddress temp=EmployeeAddressFactory.createEmployeeAddress("213345",
-                "2","23","43","Fame",232,"25",
-                "Cape Town","+27","South Africa");
+        EmployeeAddress temp=EmployeeAddressFactory.createEmployeeAddress("002345",
+                "05","15","55","Weenen Road",4444,"c243",
+                "L'shi","+243","DRC");
         System.out.println(temp.toString());
         assertNotNull(temp);
     }
     @Test
     void buildWithErrors(){
-        Exception exception=assertThrows( IllegalArgumentException.class,()->EmployeeAddressFactory.createEmployeeAddress("213345",
-                "2","23","43","Fame",232,"25",
-                "Cape Town","","South Africa"));
+        Exception exception=assertThrows( IllegalArgumentException.class,()->EmployeeAddressFactory.createEmployeeAddress("002345",
+                "02","15","55","Weenen Road",232,"c243",
+                "L'shi","","DRC"));
         String exceptionMessage= exception.getMessage();
         assertSame(exceptionMessage ,exception.getMessage());
         System.out.println(exceptionMessage);

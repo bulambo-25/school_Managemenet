@@ -12,11 +12,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import za.ac.cput.domain.EmployeeAddress;
 import za.ac.cput.factory.EmployeeAddressFactory;
-
 import java.util.List;
 import java.util.Optional;
-
 import static org.junit.jupiter.api.Assertions.*;
+
 @SpringBootTest
 @TestMethodOrder(MethodOrderer.MethodName.class)
 class EmployeeAddressServiceImplTest {
@@ -35,8 +34,9 @@ class EmployeeAddressServiceImplTest {
     @Test
     void b_read() {
 
-        Optional<EmployeeAddress> temp= employeeAddressService.read("213345");
-        assertAll(  ()->assertTrue(temp.isPresent()),
+        Optional<EmployeeAddress> temp= employeeAddressService.read("123455");
+        assertAll(
+                ()->assertTrue(temp.isPresent()),
                 ()-> assertNotNull(temp)
         );
         System.out.println(temp);
