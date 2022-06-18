@@ -14,8 +14,4 @@ Implementation of the system possible flaws
 - Our system is not independenly deployable because its only a section of the Problem statment 
 - Could use less value objects as it is harder to manage in a relational database 
 - Data types types shouold be more secure to protect data from being manipulate where it shouldnt be muttable.  
--
--
--
--
--
+
