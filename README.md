@@ -9,9 +9,11 @@ UML Domian Design possible flaws
 
 
 Implementation of the system possible flaws
--
--
--
+- System does not contain API packages, this would take all the work from the controller and put it in api reducing the boiler plant code in controller classes
+- A better use of data structures for storring data in memory could increase runtime
+- Our system is not independenly deployable because its only a section of the Problem statment 
+- Could use less value objects as it is harder to manage in a relational database 
+- Data types types shouold be more secure to protect data from being manipulate where it shouldnt be muttable.  
 -
 -
 -
