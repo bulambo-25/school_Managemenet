@@ -9,4 +9,4 @@ spring:
   datasource:
     url: jdbc:mysql://localhost:3306/SchoolManagement-db?createDatabaseIfNotExist=true
     username: root
-    password: 123password
+
