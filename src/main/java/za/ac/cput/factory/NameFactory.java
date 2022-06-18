@@ -1,3 +1,6 @@
+/*
+ * @Author Reanetsi Sholoko
+ * @Student number: 218160402*/
 package za.ac.cput.factory;
 import za.ac.cput.domain.Name;
 import za.ac.cput.util.Helper;

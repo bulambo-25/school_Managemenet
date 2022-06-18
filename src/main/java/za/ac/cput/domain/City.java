@@ -1,5 +1,7 @@
 package za.ac.cput.domain;
-
+/*
+ * @Author Reanetsi Sholoko
+ * @Student number: 218160402*/
 import com.sun.istack.NotNull;
 
 import javax.persistence.Embedded;

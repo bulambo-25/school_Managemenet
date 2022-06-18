@@ -1,3 +1,6 @@
+/*
+ * @Author Reanetsi Sholoko
+ * @Student number: 218160402*/
 package za.ac.cput.repository.interf;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
