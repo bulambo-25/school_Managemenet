@@ -1,6 +1,6 @@
 package za.ac.cput.domain;
 
-<<<<<<< HEAD
+
 
 import com.sun.istack.NotNull;
 
@@ -102,8 +102,6 @@ public class Employee {
         {
             return new Employee(this);
         }
-    }}
-=======
-public class Employee {
+    }
 }
->>>>>>> 09ce9bdb39db379dce1f41508ee6f166f8915a62
+
