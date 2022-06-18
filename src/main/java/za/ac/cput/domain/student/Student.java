@@ -6,7 +6,6 @@ ADP 3 PRACTICAL Exam Assignment
 Group 3
  */
 import com.sun.istack.NotNull;
-import za.ac.cput.domain.Name;
 
 import javax.persistence.*;
 import java.io.Serializable;
