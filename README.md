@@ -1,4 +1,4 @@
-# school_Managemenet
+
 school_Managemenet
 
 UML Domian Design possible flaws
@@ -16,6 +16,7 @@ A better use of data structures for storring data in memory could increase runti
 Our system is not independenly deployable because its only a section of the Problem statment
 Could use less value objects as it is harder to manage in a relational database
 Data type types shouold be more secure to protect data from being manipulate where it shouldnt be muttable.
+
 
 
 
