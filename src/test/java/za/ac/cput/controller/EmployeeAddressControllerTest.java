@@ -1,5 +1,10 @@
 package za.ac.cput.controller;
 
+/*Martinez Safari 219325332
+	  ADP3 - June Assessment 2022
+	  School Management System
+ */
+
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.MethodOrderer;
