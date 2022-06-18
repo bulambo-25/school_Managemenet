@@ -22,7 +22,8 @@ class StudentAddressFactoryTest
     @Test
     public void buildWithSuccess()//test passed with student ID provided
     {
-        Address address = AddressFactory.build("45","Parklands","23","Jordan",1237);
+        Address address = AddressFactory.createAddress("45","Parklands","23",
+                "Jordan",1237,"KK#", "Bush-Bush", "RT5","Uganda");
         StudentAddress studentAddress = StudentAddressFactory.build("1234",address);
         System.out.println(studentAddress);
         assertNotNull(studentAddress);
@@ -30,7 +31,8 @@ class StudentAddressFactoryTest
     @Test
     public void buildWithFailureError()//no student ID provided error test
     {
-        Address address = AddressFactory.build("45","Parklands","23","Jordan",1237);
+        Address address = AddressFactory.createAddress("45","Parklands","23",
+                "Jordan",1237,"KK#", "Bush-Bush", "RT5","Uganda");
         Exception exception = assertThrows(IllegalArgumentException.class,()-> StudentAddressFactory.build("",address));
 
         String exceptionMessage = exception.getMessage();

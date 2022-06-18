@@ -2,6 +2,7 @@ package za.ac.cput.factory;
 
 import org.junit.jupiter.api.Test;
 import za.ac.cput.domain.Employee;
+import za.ac.cput.domain.Name;
 
 import static org.junit.jupiter.api.Assertions.*;
 /*    Mutamba Prince Bulambo
@@ -14,7 +15,7 @@ class EmployeeFactoryTest {
     @Test
     public void testPass()
     {
-        Name name=NameFactory.BuildName("Dray","Prince","Mutamba");
+        Name name=NameFactory.createName("Dray","Prince","Mutamba");
         Employee employee= EmployeeFactory.BuildEmployee("220177767","draybulambo45@gmail.com",name);
         System.out.println(employee.toString());
         assertNotNull(employee);
@@ -23,7 +24,7 @@ class EmployeeFactoryTest {
 
     @Test public void testFailed()
     {
-        Name name=NameFactory.BuildName("Dray","Prince","Mutmba");
+        Name name=NameFactory.createName("Dray","Prince","Mutmba");
         Exception exception= assertThrows(IllegalArgumentException.class,()->EmployeeFactory
                 .BuildEmployee("","draybulambo4@gmail.com",name));
         String exceptionMessage= exception.getMessage();

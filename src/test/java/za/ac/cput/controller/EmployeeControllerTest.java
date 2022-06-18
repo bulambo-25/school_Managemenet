@@ -12,6 +12,7 @@ import org.springframework.core.annotation.Order;
 import org.springframework.http.ResponseEntity;
 import za.ac.cput.domain.Employee;
 import za.ac.cput.factory.EmployeeFactory;
+import za.ac.cput.factory.NameFactory;
 
 import static org.junit.jupiter.api.Assertions.*;
 /*   FullName: Mutamba Prince Bulambo
@@ -35,7 +36,7 @@ class EmployeeControllerTest {
     @BeforeEach
     void setUp() {
         this.employee= EmployeeFactory.BuildEmployee("220","draybulambo@gmail.com",
-                NameFactory.BuildName("Bulambo","dray","Mutamba"));
+                NameFactory.createName("Bulambo","dray","Mutamba"));
         this.baseUrl ="http://localhost:"+this.port+"/school_Management/Employee/";
         a_save();
     }

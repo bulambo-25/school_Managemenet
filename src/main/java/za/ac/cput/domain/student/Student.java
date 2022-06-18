@@ -5,9 +5,11 @@ Student Number 220145547
 ADP 3 PRACTICAL Exam Assignment
 Group 3
  */
-import com.sun.istack.NotNull;
+
+import za.ac.cput.domain.Name;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 import java.util.Objects;
 
@@ -15,7 +17,8 @@ import java.util.Objects;
 @Table(name="student")
 public class Student implements Serializable {
 
-     @Id @NotNull @Column private String studentID;
+     @Id @NotNull
+     @Column private String studentID;
 
     @Column private  String email;
     @Column @Embedded private Name name;

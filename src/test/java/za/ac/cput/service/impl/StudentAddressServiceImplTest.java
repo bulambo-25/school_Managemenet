@@ -18,8 +18,8 @@ import org.springframework.boot.test.context.SpringBootTest;
 import za.ac.cput.domain.Address;
 import za.ac.cput.domain.student.StudentAddress;
 import za.ac.cput.factory.AddressFactory;
-import za.ac.cput.factory.student.StudentAddressFactory;
-import za.ac.cput.service.student.Impl.StudentAddressServiceImpl;
+import za.ac.cput.factory.StudentAddressFactory;
+
 
 import java.util.List;
 import java.util.Optional;
@@ -34,7 +34,9 @@ public class StudentAddressServiceImplTest
     @Autowired private StudentAddressServiceImpl studentAddressServiceImpl;
 
 
-    Address address = AddressFactory.build("45","Parklands","23","Jordan",1237);
+    Address address = AddressFactory.createAddress
+            ("45","Parklands","23","Jordan",1237,
+                    "KK#", "Bush-Bush", "RT5","Uganda" );
     StudentAddress studentAddress = StudentAddressFactory.build("1234",address);
 
 

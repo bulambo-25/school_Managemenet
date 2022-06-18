@@ -1,6 +1,7 @@
 package za.ac.cput.factory;
 
 
+import za.ac.cput.domain.Name;
 import za.ac.cput.domain.student.Student;
 import za.ac.cput.helper.Helper;
 
@@ -16,7 +17,7 @@ public  static Student build(String studentID, String email, String firstName,St
     Helper.checkStringPara("StudentID",studentID);
     Helper.checkStringPara("email",email);
 
-    Name name= NameFactory.build(firstName,middeleName,lastName);
+    Name name= NameFactory.createName(firstName,middeleName,lastName);
 
 
     return new Student.Builder().setStudentID(studentID).setEmail(Helper.IsValidEmail(email)).setName(name).build();

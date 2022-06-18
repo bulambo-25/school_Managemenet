@@ -12,13 +12,14 @@ package za.ac.cput.factory;
 
 import za.ac.cput.domain.Address;
 import za.ac.cput.domain.student.StudentAddress;
-import za.ac.cput.helper.helper;
+import za.ac.cput.helper.Helper;
+
 
 public class StudentAddressFactory
 {
     public static StudentAddress build(String studentId, Address address)
     {
-        helper.checkStringParam("studentId", studentId);
+        Helper.checkStringPara("studentId", studentId);
        // if(studentId == null || studentId.isEmpty())//you have to provide studentId
         //    throw new IllegalArgumentException("student ID is required");
         return new StudentAddress.Builder()

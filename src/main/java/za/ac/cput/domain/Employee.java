@@ -2,12 +2,13 @@ package za.ac.cput.domain;
 
 
 
-import com.sun.istack.NotNull;
+
 
 import javax.persistence.Column;
 import javax.persistence.Embedded;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.validation.constraints.NotNull;
 import java.util.Objects;
 /*    Mutamba Prince Bulambo
       220177767

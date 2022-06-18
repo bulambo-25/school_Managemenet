@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import za.ac.cput.domain.Employee;
 import za.ac.cput.factory.EmployeeFactory;
+import za.ac.cput.factory.NameFactory;
 
 import java.util.List;
 import java.util.Optional;
@@ -35,7 +36,7 @@ class EmployeeServiceTest {
     {
 
         employee= EmployeeFactory.BuildEmployee("220177767","draybulambo45@gmail.com"
-                , NameFactory.BuildName("Mutamba","Prince","Bulambo"));
+                , NameFactory.createName("Mutamba","Prince","Bulambo"));
 
 
     }

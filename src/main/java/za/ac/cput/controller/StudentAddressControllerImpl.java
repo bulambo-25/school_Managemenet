@@ -17,7 +17,8 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
 import za.ac.cput.domain.student.StudentAddress;
-import za.ac.cput.service.student.StudentAddressService;
+import za.ac.cput.service.interf.StudentAddressService;
+
 
 import javax.validation.Valid;
 import java.util.List;

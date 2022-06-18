@@ -18,9 +18,12 @@ import org.springframework.boot.web.server.LocalServerPort;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import za.ac.cput.domain.Address;
+import za.ac.cput.domain.City;
 import za.ac.cput.domain.student.StudentAddress;
 import za.ac.cput.factory.AddressFactory;
-import za.ac.cput.factory.student.StudentAddressFactory;
+import za.ac.cput.factory.CityFactory;
+import za.ac.cput.factory.StudentAddressFactory;
+
 
 import java.lang.reflect.Array;
 
@@ -46,8 +49,8 @@ public class StudentAddressControllerImplTest
     @BeforeEach
     void setUp()
     {
-        this.address = AddressFactory
-                .build("49", "lands", "63", "ordan", 1287);
+        this.address = AddressFactory.createAddress("49", "lands", "63",
+                "ordan", 128,"KK#", "Bush-Bush", "RT5","Uganda");
         this.studentAddress = StudentAddressFactory
                 .build("6745", address);
         ;

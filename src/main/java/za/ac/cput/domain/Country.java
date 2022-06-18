@@ -5,15 +5,17 @@
  */
 
 package za.ac.cput.domain;
-import com.sun.istack.NotNull;
+
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.validation.constraints.NotNull;
 
 @Entity
 
 public class Country {
 
-    @NotNull @Id private String id;
+    @NotNull
+    @Id private String id;
     @NotNull private String  name;
 
     protected Country(){}

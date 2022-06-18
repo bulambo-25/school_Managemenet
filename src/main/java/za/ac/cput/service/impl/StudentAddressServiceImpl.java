@@ -13,8 +13,8 @@ package za.ac.cput.service.impl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import za.ac.cput.domain.student.StudentAddress;
-import za.ac.cput.repository.student.StudentAddressRepository;
-import za.ac.cput.service.student.StudentAddressService;
+import za.ac.cput.repository.interf.StudentAddressRepository;
+import za.ac.cput.service.interf.StudentAddressService;
 
 import java.util.List;
 import java.util.Optional;

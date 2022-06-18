@@ -2,11 +2,12 @@ package za.ac.cput.domain;
 /*
  * @Author Reanetsi Sholoko
  * @Student number: 218160402*/
-import com.sun.istack.NotNull;
+
 
 import javax.persistence.Embedded;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 import java.util.Objects;
 
@@ -14,10 +15,12 @@ import java.util.Objects;
 public class City implements Serializable {
 
 
-    @NotNull @Id
+    @NotNull
+    @Id
     private String id;
 
     private String cityName;
+    @NotNull
     @Embedded
     private Country country;
 
